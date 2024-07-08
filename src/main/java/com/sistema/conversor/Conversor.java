@@ -23,7 +23,7 @@ public class Conversor extends javax.swing.JFrame {
         conteudotxt.requestFocusInWindow();
                 
         // tela -------------------------------
-        setSize(800,740); 
+        setSize(800,532); 
         this.setLocationRelativeTo(null);
         // -----------------------------------------------
         
@@ -51,7 +51,7 @@ public class Conversor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CONVERSOR");
-        setPreferredSize(new java.awt.Dimension(800, 688));
+        setPreferredSize(new java.awt.Dimension(800, 532));
         setSize(new java.awt.Dimension(800, 20));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
@@ -104,7 +104,8 @@ public class Conversor extends javax.swing.JFrame {
 
         resultadotxt.setColumns(20);
         resultadotxt.setRows(5);
-        resultadotxt.setMinimumSize(new java.awt.Dimension(379, 20));
+        resultadotxt.setMinimumSize(null);
+        resultadotxt.setPreferredSize(null);
         resultadotxt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 resultadotxtMouseClicked(evt);
@@ -186,16 +187,16 @@ public class Conversor extends javax.swing.JFrame {
                 .addComponent(labelInput)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(10, 10, 10)
                 .addComponent(labelResultado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botaoLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();
